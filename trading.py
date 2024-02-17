@@ -36,6 +36,6 @@ for i in range(1,len(dataF)):
 dataF["signal"] = signal   
 
 
-dataF.signal.value_counts()
+print(dataF.signal.value_counts())
 print(dataF.iloc[:, :])
 
