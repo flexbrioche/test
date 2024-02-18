@@ -7,10 +7,16 @@ headers = {"Authorization": "1442967ZvodHjowzEtivuAZbeqiwHKrCxIiM"}
 
 response = requests.get(url, headers=headers)
 
-def ticker():
-    data = response.json()
-    for tick in data:
-        print(f"You own: {tick['ticker']}")
-        print(f"Average Price: {tick['averagePrice']}")
+data = response.json()
 
+def ticker():
+    for tick in data:
+        print(f"You own: {tick['quantity']} units of {tick['ticker']}")
+        average_price = float(tick['averagePrice'])
+        print(f"Average Price: {average_price}")
+        current_price = float(tick['currentPrice'])
+        print(f"Current Price: {current_price}\n")
+      
 ticker()
+
+#print(data)
