@@ -40,7 +40,3 @@ plt.tick_params(axis='both', which='major', labelsize=5)
 
    
 plt.show()
-
-#ticker()
-
-#print(data)
