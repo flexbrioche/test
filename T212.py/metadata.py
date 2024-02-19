@@ -11,8 +11,6 @@ headers = {"Authorization": "1288795ZihOurnSrQawlhjLLwQRyomllwNdD"}
 response = requests.get(url, headers=headers)
 
 data = response.json()
-
-#def ticker():
  
 average_prices, current_prices, tickers = [], [], []
 
